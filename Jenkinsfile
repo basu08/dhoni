@@ -4,7 +4,7 @@ pipeline {
     stage('download') {
       steps {
         sh 'echo "hello"'
-        nodejs 'node latest'
+        nodejs 'node_latest'
       }
     }
 
