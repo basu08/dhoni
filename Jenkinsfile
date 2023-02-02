@@ -1,21 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('download') {
+    stage('devo') {
       steps {
-        nodejs('angular') {
-          sh 'npm install'
-        }
-
+        nodejs 'angular'
+        sh 'npm install'
       }
     }
 
-    stage('devo') {
+    stage('stage') {
       steps {
-        nodejs('angular') {
-          sh 'ng build'
-        }
-
+        nodejs 'angular'
+        sh 'ng build'
       }
     }
 
