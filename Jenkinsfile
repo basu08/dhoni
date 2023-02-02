@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('download') {
       steps {
-        sh 'echo "hello"'
         nodejs 'node_latest'
+        sh 'npm install'
       }
     }
 
