@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('install') {
+    stage('download') {
       steps {
         nodejs('angular') {
           sh 'npm install'
