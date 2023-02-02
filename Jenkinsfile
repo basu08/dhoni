@@ -10,7 +10,7 @@ pipeline {
 
     stage('build') {
       steps {
-        nodejs('latest_install') {
+        nodejs('angular') {
           sh 'ng build'
         }
 
