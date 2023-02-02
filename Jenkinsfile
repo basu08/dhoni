@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('download') {
       steps {
-        nodejs 'node_latest'
+        nodejs 'angular'
         sh 'npm install'
       }
     }
