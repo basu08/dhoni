@@ -10,5 +10,14 @@ pipeline {
       }
     }
 
+    stage('devo') {
+      steps {
+        nodejs('angular') {
+          sh 'ng build'
+        }
+
+      }
+    }
+
   }
 }
